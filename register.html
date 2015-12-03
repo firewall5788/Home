@@ -2,9 +2,103 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Document</title>
+    <script type="text/javascript" src="lib/js/jquery-1.11.3.js"></script>
+    <style>
+        *{
+            margin: 0; padding: 0;
+        }
+        html{
+            background: #E9EEF0;
+        }
+        .wrapper{
+            margin: 120px auto;
+            width: 880px;
+        }
+        .registerBox{
+            background-color: #fefefe;
+            border: 1px solid #bfd6e1;
+            border-radius: 5px; <!-- 圆角 -->
+            color: #444;
+            font: 14px 'Microsoft YaHei','微软雅黑';
+            margin: 0 auto;
+            width: 388px;
+        }
+        .registerBox .registerBoxCenter{
+            border-bottom: 1px solid #dde0e8;
+            padding: 10px 24px;
+        }
+        .registerBox .registerBoxCenter p{
+            margin-bottom: 5px;
+        }
+        .registerBox .registerBoxButtons{
+            background-color: #f0f4f6;
+            border-top: 1px solid #fff;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            line-height: 28px;
+            padding: 20px 150px 48px 150px;
+           <!-- vertical-align: center; -->
+        }
+        .registerBox .registerInput{
+            border: 1px solid #d2d9dc;
+            border-radius: 2px;
+            color: #444;
+            font: 12px 'Microsoft YaHei','微软雅黑';
+            padding: 8px 14px;
+            margin-bottom: 8px;
+            width: 310px;
+        }
+        .registerBox .registerInput:focus {
+            border: 1px solid #b7d4ea;
+            box-shadow: 0 0 8px #b7d4ea;
+        }
+        .registerBox .registerBtn {
+            background-image: -moz-linear-gradient(to bottom, #B5DEF2, #85CFEE);
+            border: 1px solid #98CCE7;
+            border-radius: 20px;
+            box-shadow:inset rgba(255,255,255,0.6) 0 1px 1px, rgba(0,0,0,0.1) 0 1px 1px;
+            color: #FFF;
+            cursor: pointer;
+            float: right;
+            font: bold 13px Arial;
+            padding: 5px 14px;
+            margin-right:5px;
+        }
+        .registerBox .registerBtn:hover {
+            background-image: -moz-linear-gradient(to top, #b5def2, #85cfee);
+        }
+
+    </style>
+
+    <script>
+        function register(){
+
+        }
+    </script>
 </head>
 <body>
+<div id="register">
+    <!-- <form action="" method="post">  -->
+    <div class="wrapper">
+        <div class="registerBox">
+            <div class="registerBoxCenter">
+                <p><label for="userName">用户名：</label></p>
+                <p><input id="userName" class="registerInput" name="userName" type="text" autofocus required autocomplete="off" placeholder="请输入用户名" value="" /></p>
+                <p><label for="aliseName">真实姓名：</label></p>
+                <p><input id="aliseName" class="registerInput" name="aliseNames" type="text" required placeholder="请输入真实姓名" value=""/></p>
+                <p><label for="password">密码：</label></p>
+                <p><input id="password" class="registerInput" name="passwords" type="password" value="" required placeholder="请输入密码"></p>
+                <p><label for="confirmPass">密码确认：</label></p>
+                <p><input id="confirmPass" class="registerInput" name="confirmPass" type="password" value="" required placeholder="请再次确认密码"></p>
+            </div>
+            <div class="registerBoxButtons">
+                <input id="registerBtn" class="registerBtn" type="submit" value="注册" onclick="register()"/>
+            </div>
 
+        </div>
+    </div>
+    <!-- </form>  -->
+</div>
 </body>
 </html>
