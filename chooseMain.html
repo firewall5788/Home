@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style rel="stylesheet" type="text/css" href="lib/stylesheets/css.css"></style>
+    <style>
+        html {
+            background: #E9EEF0;
+        }
+        .wrapper {
+            margin: 40px auto;
+            width: 960px;
+            background: #f4dbc7;
+        }
+        .content {
+            background: #85cfee;
+            border: 1px solid #62a4f4;
+            border-radius: 12px;
+            color: #444;
+            margin: 0 auto;
+            width: 600px;
+        }
+        .content p {
+
+            padding: 12px 36px;
+        }
+        .chooseBox {
+            background: #4ada92;
+            border: 1px solid #84DDA7;
+            border-radius: 12px;
+            color: #444;
+            margin: 0 auto;
+            width: 600px;
+        }
+        .chooseBox select {
+            margin: 10px 240px;
+            padding: 5px;
+            border: 1px solid #85cfee;
+            border-radius: 8px;
+            font: 14px 'Microsoft YaHei','微软雅黑';
+        }
+
+        .chooseBox .submitBtn {
+            background-image: -moz-linear-gradient(to bottom, #B5DEF2, #85CFEE);
+            border: 1px solid #98CCE7;
+            border-radius: 10px;
+            box-shadow:inset rgba(255,255,255,0.6) 0 1px 1px, rgba(0,0,0,0.1) 0 1px 1px;
+            color: #FFF;
+            cursor: pointer;
+            font: bold 13px Arial;
+            padding: 5px 14px;
+            margin: 5px 250px;
+        }
+        #who {
+            background: #85cfee;
+            border: none;
+        }
+
+    </style>
+    <script>
+        function ok() {
+           // alert("小崔想吃面");
+            confirm("想吃蛋炒饭？");
+        }
+    </script>
+</head>
+<body>
+<div class="wrapper" id="wrapper">
+    <div class="content">
+        <p>Hi，<input id="who" type="text"/>HelloWorld。中午想吃什么？</p>
+    </div>
+    <div class="chooseBox">
+        <p>
+            <select class="select">
+                <option>软件园</option>
+                <option>超市</option>
+                <option>西边</option>
+            </select>
+        </p>
+        <p><input id="submitBtn" class="submitBtn" type="button" value="OK" onclick="ok()"/></p>
+    </div>
+</div>
+</body>
+</html>
